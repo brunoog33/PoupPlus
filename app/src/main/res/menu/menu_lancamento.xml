@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Controle.MainActivity">
+    <item
+        android:id="@+id/menu_lancamento_salvar"
+        android:orderInCategory="100"
+        android:title="@string/menu_lancamento_salvar"
+        android:icon="@drawable/save_icon"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_lancamento_cancelar"
+        android:orderInCategory="100"
+        android:title="@string/menu_lancamento_cancelar"
+        android:icon="@drawable/delete_icon"
+        app:showAsAction="never" />
+</menu>

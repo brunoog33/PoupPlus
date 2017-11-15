@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PoupPlus</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_lancamento">Lançamentos</string>
+    <string name="title_ultTrans">Movimentações</string>
+    <string name="menu_lancamento_salvar">Salvar</string>
+    <string name="menu_lancamento_cancelar">Cancelar</string>
+    <string name="sim_lancamento">Descartar</string>
+    <string name="nao_lancamento">Cancelar</string>
+</resources>

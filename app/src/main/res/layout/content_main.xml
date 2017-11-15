@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_action_bar_splitter"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Controle.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linear_resumo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_resumo"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:elevation="100dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/poupplus_background"/>
+
+
+                        <TextView
+                            android:id="@+id/main_resumo"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:ellipsize="marquee"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="5dp"
+                            android:text="Resumo"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/main_saldo_atual"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="start"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:text="Saldo Atual: "
+                            android:textStyle="bold"
+                            android:textColor="#1976D2"
+                            android:textSize="15sp"
+                            android:typeface="sans"
+                            android:layout_below="@+id/main_resumo"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:id="@+id/main_saldo_atual_result"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="end"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textSize="15sp"
+                            android:typeface="sans"
+                            android:layout_below="@+id/main_resumo"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:id="@+id/main_acumulado"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="start"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:text="Acumulado: "
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="15sp"
+                            android:typeface="sans"
+                            android:layout_below="@+id/main_saldo_atual"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:id="@+id/main_acumulado_result"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="end"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="15sp"
+                            android:typeface="sans"
+                            android:layout_below="@+id/main_saldo_atual"
+                            android:layout_centerHorizontal="true" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_ultimas"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/linear_resumo"
+                >
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_ultimas_trans"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:elevation="100dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/main_ultima"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="5dp"
+                            android:text="Últimas transações"
+                            android:textColor="#4682B4"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/main_ultima_saldo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="start"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:text="Depósito: "
+                            android:textStyle="bold"
+                            android:textColor="#006400"
+                            android:textSize="15sp"
+                            android:typeface="sans"
+                            android:layout_below="@+id/main_ultima"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:id="@+id/main_ultimo_saldo_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="end"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="#006400"
+                            android:textSize="15sp"
+                            android:typeface="sans"
+                            android:layout_below="@+id/main_ultima"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:id="@+id/main_ultima_debito"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="start"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:text="Débito: "
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="15sp"
+                            android:typeface="sans"
+                            android:layout_below="@+id/main_ultimo_saldo_data"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:id="@+id/main_ultimo_debito_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="end"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="15sp"
+                            android:typeface="sans"
+                            android:layout_below="@+id/main_ultima_saldo"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:id="@+id/main_ultima_juro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="start"
+                            android:gravity="start"
+                            android:maxLines="1"
+                            android:text="Juros: "
+                            android:padding="10dp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/holo_orange_light"
+                            android:textSize="15sp"
+                            android:typeface="sans"
+                            android:layout_below="@+id/main_ultimo_debito_data"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:id="@+id/main_ultimo_juro_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="end"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@android:color/holo_orange_light"
+                            android:textSize="15sp"
+                            android:typeface="sans"
+                            android:layout_below="@+id/main_ultima_debito"
+                            android:layout_centerHorizontal="true" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
